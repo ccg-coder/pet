@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/main_title_bar"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/iv_head"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/default_icon" />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_old_pwd"
+        android:paddingLeft="80dp"
+        android:hint="请输入旧密码"
+        android:gravity="center_vertical"
+        android:textColorHint="#a3a3a3"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="#666666" />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/et_new_pwd"
+        android:paddingLeft="80dp"
+        android:hint="请输入新密码"
+        android:gravity="center_vertical"
+        android:textColorHint="#a3a3a3"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="#666666" />
+    <EditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/et_new_pwd_again"
+        android:paddingLeft="80dp"
+        android:hint="@string/et_new_pwd_again"
+        android:gravity="center_vertical"
+        android:textColorHint="#a3a3a3"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="#666666" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="保存"
+        android:id="@+id/btn_preservation"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:background="@drawable/register_selector" />
+
+
+</LinearLayout>

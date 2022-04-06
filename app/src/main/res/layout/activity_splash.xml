@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"><!-- 将布局背景设置成欢迎图片 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/launch_bg"
+        android:scaleType="centerCrop"/>
+    <!-- TextView控件用于显示版本号信息-->
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"/>
+    <!--android:layout_centerInParent="true"属性将TextView置于父控件的中心位置-->
+
+</FrameLayout>

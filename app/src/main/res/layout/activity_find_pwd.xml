@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/main_title_bar"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/iv_head"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/default_icon" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="65dp"
+        android:text="1.您的用户名为？"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/et_user_name"
+        android:paddingLeft="80dp"
+        android:hint="请输入您的用户名"
+        android:gravity="center_vertical"
+        android:textColorHint="#a3a3a3"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="#666666" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2.您的姓名是？"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:paddingLeft="65dp"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/et_validate_name"
+        android:paddingLeft="80dp"
+        android:hint="请输入您的姓名"
+        android:gravity="center_vertical"
+        android:textColorHint="#a3a3a3"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="#666666" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="找回密码"
+        android:id="@+id/btn_find"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:background="@drawable/register_selector" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_find_1"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="33sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_reset_pwd"/>
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_find_2"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
